@@ -1,42 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("hero.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.top-bar{
-    height: 55px;
-    background-color: rgba(255, 255, 255, 0.5);
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
+.top-bar {
+  height: 51px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(66, 63, 63, 0.5);
+  font-family: "Roboto Mono", "Arial", sans-serif;
+}
 
-.container{
-    height: calc(100% - 55px);
-    color: #fff;
+.logo {
+  height: 51px;
+  width: 170px;
+  border-left: 1px solid #363636;
+  border-right: 1px solid #363636;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.logo svg {
+  height: 45%;
+  fill: #fff;
+  margin: 5px;
+}
+.marvel-logo{
+    height: 51px;
+    width: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.container span{
-    font-size: 2rem;
+    font-family: "Roboto Serif", serif;
     font-weight: bold;
-    margin: 0 1rem;
-    color: red;
-    position: relative;
-    top: 90px;
+    border-right: 1px solid #363636;
 }
-.container p{
+.marvel-logo span{
     font-size: 2rem;
-    font-weight: bold;
-    margin: 0 0.5rem;
-    position: relative;
-    top: 90px;
-    /* text-decoration: underline overline; */
+    font-weight: bolder;
 }
+.logo h4 {
+  font-size: 0.8rem;
+}
+
+.marvel-right-logo{
+  height: 51px;
+  width: 200px;
+  position: relative;
+  left: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #363636;
+  padding: 0 10px;
+}
+.marvel-right-logo img{
+  height: 60%;
+  padding: 0 15px ;
+}
+.marvel-right-logo h4{
+  font-size: 12px;
+  user-select: none;
+}
+.logo{
+  height: 51px;
+  border-right: 1px solid #363636;
+
+}
+.container {
+  height: calc(100% - 55px);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
